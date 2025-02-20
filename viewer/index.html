@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClickMate</title>
+    <link rel="icon" href="./assets/icon/logo_clickmate.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1"></script> 
+  </head>
+  
+  <body>
+    <section class="main-container">
+      <!-- Top 부분 -->
+      <div class="top-contents">
+        <div class="item-top">
+
+          <div class="view-btn-wrap">
+            <div class="logo_text">
+              <span>ClickMate</span>
+            </div>
+            <div class="btn-small c_red">
+              <span>LIVE</span>
+            </div>
+            <div class="btn-small c_black">
+              <i class="fa-solid fa-eye"></i>
+              <span>1245</span>
+            </div>
+          </div>
+
+          <div class="top-title">
+            <span class="saller_top_tit">언니들이 기다리던 고퀄창고! 특템하세요!!</span>
+            <span class="saller_name">베베숑숑</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- 구매하기 -->
+      <div class="buying_wrap">
+        <!-- 채팅영역 -->
+        <div id="chatContainer">
+          
+          <div class="chat_scroll" id="chatMessages">
+            <div class="chat_list">
+              <span class="list_name chat_saller">메니저</span>
+              <span class="list_text chat_saller">[먹어봐 콜라겐]상품이 모두 품절되었습니다.</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_ok">카레이서</span>
+              <span class="list_text chat_ok">님이 상품을 구매해주셨습니다. 감사합니다.</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_viewer">카레이서</span>
+              <span class="list_text chat_viewer">상품을 취소하고 싶어요.. 어떻게 해야하나요???</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_viewer">카레이서</span>
+              <span class="list_text chat_viewer">상품을 취소하고 싶어요.. 어떻게 해야하나요???</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_saller">메니저</span>
+              <span class="list_text chat_saller">[먹어봐 콜라겐]상품이 모두 품절되었습니다.</span>
+            </div>
+            <div class="chat_list">
+              
+              <span class="list_text chat_ok">카레이서 님이 상품을 구매해주셨습니다. 감사합니다.</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_viewer">카레이서</span>
+              <span class="list_text chat_viewer">상품을 취소하고 싶어요.. 어떻게 해야하나요???</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_viewer">카레이서</span>
+              <span class="list_text chat_viewer">상품을 취소하고 싶어요.. 어떻게 해야하나요???</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_saller">메니저</span>
+              <span class="list_text chat_saller">[먹어봐 콜라겐]상품이 모두 품절되었습니다. 고객님의 성원에 감사합니다. 앞으로도 많은 관심부탁드립니다</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_ok">카레이서</span>
+              <span class="list_text chat_ok">님이 상품을 구매해주셨습니다. 감사합니다.</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_viewer">카레이서</span>
+              <span class="list_text chat_viewer">상품을 취소하고 싶어요.. 어떻게 해야하나요???</span>
+            </div>
+            <div class="chat_list">
+              <span class="list_name chat_viewer">카레이서</span>
+              <span class="list_text chat_viewer">상품을 취소하고 싶어요.. 어떻게 해야하나요???</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 관리자 공지사항 -->
+        <div class="admin_scroll">
+          <span>클릭메이트 관리자 공지사항_ 저희 클릭메이트에서는 보세 이미테이션 판매를 금지하고 있으며 이를 관리하고자 철저히 모니터링하고 있습니다.</span>
+        </div>
+
+        <!-- 셀러 공지사항 -->
+        <button class="saller_notice openPopup" data-popup="saller_notice">
+          <span class="title">공지</span>
+          <span class="text">계좌안내 카카오 33333-33333-55555 예금주 베베숑숑이에요..</span>
+        </button>
+        
+
+        <!-- item 주문버튼-->
+        <div class="item_container">
+          <div class="buying_item">
+            <div class="item_text">
+              <span class="buying_title">49번 아디다스 점퍼!! 세련되고 고급스러워요</span>
+              <div class="price_num">
+                <span class="price">86,000원</span>
+                <!-- <div class="count_num">200개 남음</div> -->
+              </div>
+            </div>
+            <button class="btn_price openPopup" data-popup="priceing_01">구매하기</button>
+          </div>
+          <div class="btn_buying_view">
+            <button class="icon openPopup" data-popup="buying_me_01">
+              <i class="fa-regular fa-file-lines"></i>
+            </button>
+            <span>내 주문</span>
+          </div>
+        </div>
+
+      </div>
+      <!-- Bottom 부분 -->
+      <div class="msg_send">
+        <input type="text" placeholder="메세지를 입력하세요.">
+        <button class="btn_send">전송</button>
+      </div>
+
+    </section>
+
+    <!-- 팝업 아이템들 -->
+
+      <!-- saller 공지사항 팝업 -->
+    <div class="popup_back popup_1" id="saller_notice">
+      <div class="pop_items">
+        <div class="sub_gnb">
+          <div class="icons hidden">
+            <img src="./assets/icon/arrow_left_01.svg">
+          </div>
+          <span class="sub_gnb_title">공지사항</span>
+          <div class="icons">
+            <img src="./assets/icon/icon_close.svg" class="closePopup">
+          </div>
+        </div>
+        <div class="scroll_wrap text_wrap">
+          <span class="pop_text">
+            취소는 방송 종료 전 "1:1채팅으로만" 접수!<br>
+            현금영수증은 구매자 번호로 자동발행(번호변경불가)<br>
+            ▶채팅 특성 상 여러번 남기면 최신글로 인지되어 답변이 늦어질 수 있어요!<br>
+            📌 방송 종료 후 카톡으로 정산서 발송<br>
+            계좌번호: 농협 301-0192-1589-21 이지텍<br>
+            주문 상품 금액 + 배송비 4,000원 (산간 5,000원, 제주도 7,000원) <br>
+            💳 결제 안내<br>
+            1. 카드 결제 불가, 현금영수증 발행 가능<br>
+            2. 입금 기한: 방송 종료 후 익일 오후까지<br>
+            3. 노쇼 1회 차단합니다(강력히)<br>
+            [노쇼->구매하기 누르고 미결제]⏰ 마감 후 입금 시 배송 및 확인이 불가하니 기한 엄수 부탁드려요!<br>
+            📦배송 안내배송은 최대 14영업일 이내 도착 🚛❓<br>
+            1:1 채팅 방법네이버에 "클릭메이트 검색" > 셀러 "쓰리백" 검색 > 1:1 채팅하기 버튼 클릭<br>
+            🚨모두를 위한 규칙<br>
+            1. 잦은 취소/노쇼 (구매 후 미결제)는 기록되어 차단될 수 있습니다.<br>
+            2. 방송 종료 후 구매하신 외 상품 추가 불가능합니다.<br>
+            3. 노쇼 1회 차단 합니다(노쇼가 많아졌어요ㅠ)<br>
+            4. 신중한 구매 부탁드립니다. 🙏<br>
+            💰입금 시스템<br>
+            입금자명은 "닉네임이 아닌" 기재하신 배송수령인과 동일해야 확인 가능합니다.<br>
+            1. 특수문자 금지<br>
+            2. 예) 쓰리백 (O) / 쓰리백(닉네임) (X)<br>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- 내 주문 팝업 -->
+    <div class="popup_back popup_2" id="buying_me_01">
+      <div class="pop_items bottom">
+        <div class="sub_gnb">
+          <div class="icons hidden">
+            <img src="./assets/icon/arrow_left_01.svg">
+          </div>
+          <span class="sub_gnb_title">주문내역</span>
+          <div class="icons">
+            <img src="./assets/icon/icon_close.svg" class="closePopup">
+          </div>
+        </div>
+        <div class="order_container">
+          <div class="order_items">
+            <div class="order_item">
+              <div class="order_text">
+                <div class="text">
+                  <span>비요뜨 138ml x 12개입(1박스)</span>
+                  <span>옵션: 초코링</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div class="order_nums">
+                <span>10,900원</span>
+                <div class="order_num">
+                  <div class="icon_minus">
+                    <img src="./assets/icon/minus.svg">
+                  </div>
+                  <div class="num">1</div>
+                  <div class="icon_plus">
+                    <img src="./assets/icon/plus.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order_item">
+              <div class="order_text">
+                <div class="text">
+                  <span>비요뜨 138ml x 12개입(1박스)</span>
+                  <span>옵션: 초코링</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div class="order_nums">
+                <span>10,900원</span>
+                <div class="order_num">
+                  <div class="icon_minus">
+                    <img src="./assets/icon/minus.svg">
+                  </div>
+                  <div class="num">1</div>
+                  <div class="icon_plus">
+                    <img src="./assets/icon/plus.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order_item">
+              <div class="order_text">
+                <div class="text">
+                  <span>비요뜨 138ml x 12개입(1박스)</span>
+                  <span>옵션: 초코링</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+              <div class="order_nums">
+                <span>10,900원</span>
+                <div class="order_num">
+                  <div class="icon_minus">
+                    <img src="./assets/icon/minus.svg">
+                  </div>
+                  <div class="num">1</div>
+                  <div class="icon_plus">
+                    <img src="./assets/icon/plus.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order_price_total">
+          <div class="order_text">결정 예정 금액</div>
+          <div class="order_price">23,770원</div>
+        </div>
+
+        <div class="pop_btn_wrap">
+          <button class="btn_close closePopup">
+            <span>닫기</span>
+          </button>
+          <button class="btn_next openPopup" data-popup="buying_me_02">
+            <span>배송정보 입력</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 배송지 입력 팝업 -->
+    <div class="popup_back popup_2" id="buying_me_02">
+      <div class="pop_items bottom">
+        <div class="sub_gnb">
+          <div class="icons hidden">
+            <img src="./assets/icon/arrow_left_01.svg">
+          </div>
+          <div class="input_container">
+            <span class="sub_gnb_title">배송정보</span>
+          </div>
+          <div class="icons">
+            <img src="./assets/icon/icon_close.svg" class="closePopup">
+          </div>
+        </div>
+
+        <div class="adress_container">
+          <form action="" method="get">
+            <div class="input_items">
+              <div class="sub_title">배송지</div>
+              <div class="input_item">
+                <span class="sub_text">이름</span>
+                <input class="sub_input" type="text" placeholder="입금자명 입력입력해주세요.">
+              </div>
+              <div class="input_item">
+                <span class="sub_text">연락처</span>
+                <input class="sub_input" type="text" placeholder="(-)없이 번호만 입력해주세요.">
+              </div>
+              <div class="input_item">
+                <span class="sub_text">배송지</span>
+                <textarea class="sub_input" placeholder="배송지를 입력해주세요." rows="3"></textarea>
+              </div>
+            </div>
+            
+            <div class="input_items">
+              <div class="sub_title">요청사항</div>
+              <div class="input_item">
+                <textarea class="sub_input" placeholder="(선택사항) 별도로 남기실 문의사항 입력해주세요." rows="5"></textarea>
+              </div>
+            </div>
+          </form>
+            
+        </div>
+        <div class="pop_btn_wrap">
+          <button class="btn_next openPopup" data-popup="buying_me_03">
+            <span>저장하기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 주문이 완료메세지 -->
+    <div class="popup_back popup_1" id="buying_me_03">
+      <div class="pop_items">
+        <div class="sub_gnb">
+          <div class="icons hidden">
+            <img src="./assets/icon/arrow_left_01.svg">
+          </div>
+          <span class="sub_gnb_title">주문이 완료</span>
+          <div class="icons">
+            <img src="./assets/icon/icon_close.svg" class="closePopup">
+          </div>
+        </div>
+        <div class="text_wrap">
+          <span>
+            주문이 완료되었습니다. 감사합니다.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 구매하기 -->
+    <div class="popup_back popup_2" id="priceing_01">
+      <div class="pop_items bottom">
+        <div class="sub_gnb">
+          <div class="icons hidden">
+            <img src="./assets/icon/arrow_left_01.svg">
+          </div>
+          <div class="input_container">
+            <span class="sub_gnb_title">구매하기</span>
+          </div>
+          <div class="icons">
+            <img src="./assets/icon/icon_close.svg" class="closePopup">
+          </div>
+        </div>
+
+        <div class="text_container">
+          <div class="text_title">
+            <span class="text_top">49번 아이다스 점퍼! 세련되고 고급져요!!</span>
+            <span class="text_sub">옵션을 선택해 주세요.</span>
+          </div>
+
+          <div class="dropdown_wrap">
+            <div class="dropdown">
+              <button class="dropdown_btn" data-default="색상을 선택해주세요."></button>
+              <ul class="dropdown_menu">
+                <li class="dropdown_item">
+                  <div class="text">빨강</div>
+                  <div class="num_out drop_nums">품  절</div>
+                </li>
+                <li class="dropdown_item">
+                  <div class="text">파랑</div>
+                </li>
+                <li class="dropdown_item">
+                  <div class="text">노랑</div>
+                </li>
+                <li class="dropdown_item">
+                  <div class="text">검정</div>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="dropdown_btn" data-default="사이즈를 선택해주세요."></button>
+              <ul class="dropdown_menu">
+                <li class="dropdown_item">
+                  <div class="text">S</div>
+                  <span class="num_quantity drop_nums">재고: 250개</span>
+                </li>
+                <li class="dropdown_item">
+                  <div class="text">M</div>
+                  <div class="num_out drop_nums">품  절</div>
+                </li>
+                <li class="dropdown_item">
+                  <div class="text">L</div>
+                  <div class="num_out_before drop_nums">품절임박</div>
+                </li>
+                <li class="dropdown_item">
+                  <div class="text">XL</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="num_count">
+            <div class="choice_items">
+            </div>
+            <div class="order_num">
+              <div class="icon_minus">
+                <img src="./assets/icon/minus.svg">
+              </div>
+              <div class="num">1</div>
+              <div class="icon_plus">
+                <img src="./assets/icon/plus.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pop_btn_wrap">
+          <button class="btn_next openPopup" id="confettiBtn" data-popup="priceing_02">
+            <span>장바구니에 담기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 구매완료 -->
+    <div class="popup_back popup_3" id="priceing_02">
+      <div class="pop_item">
+        <span>구매완료</span>
+      </div>
+    </div>
+
+
+    <!-- JavaScript 파일 연결 -->
+    
+    <script src="./js/pop_up.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/confetti.js"></script>
+    
+    <script>
+      function startChatRolling() {
+          const chatMessages = document.getElementById("chatMessages");
+          const messageHeight = document.querySelector(".chat_list").offsetHeight;
+
+          let position = 0;
+
+          setInterval(() => {
+              const firstMessage = chatMessages.firstElementChild;
+
+              // 메시지가 위로 이동할 때 투명도 효과 추가
+              firstMessage.classList.add("fade-out");
+
+              chatMessages.style.transition = "transform 0.5s ease-in-out";
+              position -= messageHeight;
+              chatMessages.style.transform = `translateY(${position}px)`;
+
+              setTimeout(() => {
+                  chatMessages.appendChild(firstMessage); // 맨 위 메시지를 아래로 이동
+                  firstMessage.classList.remove("fade-out"); // 다시 나타나도록 설정
+
+                  // 위치 초기화
+                  chatMessages.style.transition = "none";
+                  position += messageHeight;
+                  chatMessages.style.transform = `translateY(${position}px)`;
+
+                  setTimeout(() => {
+                      chatMessages.style.transition = "transform 0.5s ease-in-out";
+                  }, 50);
+              }, 500);
+          }, 2000);
+      }
+
+      window.onload = () => {
+          setTimeout(startChatRolling, 1000);
+      };
+  </script>
+
+  </body>
+</html>
