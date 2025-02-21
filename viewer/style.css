@@ -1053,3 +1053,24 @@ letter-spacing: -0.35px;
   color: #f52388;
   display: inline-block;
 }
+
+/* 
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  opacity: 0.8;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: confetti-fall linear infinite;
+}
+
+@keyframes confetti-fall {
+  to {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+  }
+} */

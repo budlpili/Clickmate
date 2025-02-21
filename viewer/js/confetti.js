@@ -8,3 +8,4 @@ function launchConfetti() {
 
 // 버튼 클릭 시 폭죽 효과 실행
 document.getElementById("confettiBtn").addEventListener("click", launchConfetti);
+
