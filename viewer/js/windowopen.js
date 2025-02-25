@@ -9,7 +9,7 @@ document.addEventListener("click", function () {  // 페이지 클릭 시 실행
 });
 
 function openNewWindow() {
-    let width = 430;
+    let width = 450;
     let height = window.innerHeight;
     let left = (screen.width - width) / 2;
     let top = (screen.height - height) / 2;
