@@ -33,16 +33,16 @@ button {
 .main-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: 450px;
+  min-height: 100dvh;
   margin: 0 auto;
-  /* background: url(./assets/imges/seller_01.jpeg)
-    no-repeat center; */
+  background: url(./assets/imges/seller_01.jpeg)
+    no-repeat center;
   background-size: cover;
-  
+  border: solid 1px red;
 }
 .top-contents {
   display: flex;
@@ -1053,23 +1053,11 @@ letter-spacing: -0.35px;
   display: inline-block;
 }
 
-/* 
-.confetti {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  opacity: 0.8;
-  top: 0;
-  left: 50%;
-  border-radius: 50%;
-  pointer-events: none;
-  animation: confetti-fall linear infinite;
+
+@media (max-width:800px) {
+  .main-container {
+    width: 100%;
+  }
 }
 
-@keyframes confetti-fall {
-  to {
-      transform: translateY(100vh) rotate(720deg);
-      opacity: 0;
-  }
-} */
+
